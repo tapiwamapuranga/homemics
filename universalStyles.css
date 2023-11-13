@@ -1,0 +1,519 @@
+*
+{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+}
+body
+{
+  padding-top: 70px;
+  background-color: #081b29;
+    color: #ededed;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+h1,
+h3,
+h1,
+p1,
+p{
+  background-color: #081b29;
+}
+.sidebar
+{
+  width: 50%;
+  background-color:#081b29;
+  width: 100%;
+  cursor: pointer;
+  border-right-style:none;
+  margin-bottom: 50px;
+}
+.sidebarservices
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.usercomments
+{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.sidebarservices div
+{
+  padding: 8px;
+  font-size: 16px;
+}
+button
+{
+  margin: 5px;
+  padding: 4px;
+  font-weight: bold;
+}
+form
+{
+  margin: 8px;
+}
+input
+{
+  display: block;
+  margin: 3px;
+}
+.comment
+{
+  padding-top:0px;
+  margin-top: 0px;
+  font-size: 14px;
+  color: grey;
+  font-family: serif;
+  text-align: center;
+  margin-left: 50px;
+}
+.commentimg
+{
+  border-radius:15px;
+  width:30px;
+  display: inline-block;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.username
+{
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.exit
+{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  color: red;
+  background-color: burlywood;
+  cursor: pointer;
+}
+.exit:hover
+{
+  background-color: red;
+  color: white;
+}
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: #081b29;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo
+{
+    font-size:25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+.logo::before
+{
+    content: '';
+    position: absolute;
+    left:0;
+    right: 0;
+    width:100%;
+    height: 70%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 0.5s;
+}
+.head
+{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+   
+}
+
+.navbar a
+{
+    font-size: 18px;
+    color:#ededed;
+    text-decoration: none;
+    font-weight:500;
+    margin-left:35px;
+    transition: 0.3s;
+}
+.navbar a:hover,
+.navbar a.active
+{
+    color: #00abf0;
+}
+
+.header-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.switch-btn,
+.socket-btn,
+.light-btn,
+.conduit-btn {
+  display: inline;
+}
+
+.switchbtn,
+.socketbtn,
+.lightbtn,
+.conduitbtn {
+  height: 39px;
+  padding: 4px;
+  border-radius: 16px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  transition: box-shadow -1.15s;
+  transition: color o.14s;
+  padding: 5px;
+  margin-top: 8px;
+}
+
+.switchbtn:hover,
+.socketbtn:hover,
+.lightbtn:hover,
+.conduitbtn:hover {
+  opacity: 8;
+  box-shadow: 2px 3px 10px rgb(187, 178, 178);
+  padding: 5px;
+}
+
+.switchbtn:active,
+.socketbtn:active,
+.lightbtn:active,
+.conduitbtn:active {
+  opacity: 5;
+  border-color: blue;
+  color: blue;
+  box-shadow: 2px 5px 10px rgb(187, 178, 178);
+}
+
+.switchbtnimg,
+.socketbtnimg,
+.lightbtnimg,
+.conduitbtnimg {
+  height: 99%;
+  border-radius: 7px;
+}
+footer
+{
+    background-color: #081b29;
+    font-size: 15px;
+    font-style: italic;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 3px;
+}
+
+
+
+/*KEYFRAMES ANIMATION*/
+
+@keyframes showRight
+{
+  100%
+  {
+    width: 0;
+  }
+}
+
+
+@media screen and (max-width:400px) 
+{
+  .sidebar
+{
+  width: 50%;
+  background-color:#081b29;
+  width: 100%;
+  cursor: pointer;
+  border-right-style:none;
+  margin-bottom: 50px;
+}
+.sidebarservices
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.usercomments
+{
+  display:flex;
+  flex-direction: row;
+  text-align: center;
+}
+.sidebarservices div
+{
+  display: flex;
+  flex-direction:column ;
+  padding: 8px;
+  font-size: 16px;
+}
+button
+{
+  margin: 5px;
+  padding: 4px;
+  font-weight: bold;
+  display: block;
+}
+form
+{
+  margin-left: 5%;
+  width: 80%;
+}
+textarea
+{
+  width: 100%;
+  font-size: 16px;
+}
+input
+{
+  display: block;
+  width: 90%;
+  height: 30px;
+  margin: 3px;
+  font-size: 16px;
+}
+.usercomments
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.comment
+{
+  padding-top:0px;
+  margin-top: 0px;
+  font-size: 14px;
+  color: grey;
+  font-family: serif;
+  text-align: center;
+  margin-left: 50px;
+}
+.commentimg
+{
+  border-radius:15px;
+  width:30px;
+  display: inline-block;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  margin-top: 20px;
+}
+.username
+{
+  display: inline-block;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.exit
+{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  color: red;
+  background-color: burlywood;
+  cursor: pointer;
+}
+.exit:hover
+{
+  background-color: red;
+  color: white;
+}
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 2px;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: #081b29;;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+    z-index: 100;
+}
+.logo
+{
+    font-size:15px;
+    margin-left: -20%;
+}
+
+.head
+{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+  justify-content:center;  
+}
+.navbar
+{
+  padding: 0px;
+  margin-right: 0px;
+  margin-left: -5%;
+}
+.navbar a
+{
+    font-size:9px;
+    margin-left:5px;
+}
+.header-buttons {
+
+  justify-content:center;
+  align-items: center;
+  margin-left:-5%;
+}
+
+.switchbtn,
+.socketbtn,
+.lightbtn,
+.conduitbtn {
+  height: 30px;
+  font-size: 12px;
+  padding: 2px;
+  margin-top: 8px;
+}
+
+.switchbtnimg,
+.socketbtnimg,
+.lightbtnimg,
+.conduitbtnimg {
+  height: 50%;
+  border-radius: 7px;
+}
+footer
+{
+    background-color: #081b29;
+    font-size: 15px;
+    font-style: italic;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 3px;
+}
+  
+}
+
+/*@media screen and (max-width:768px) 
+{
+
+body
+{
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.sidebar
+{
+  width: 90%;
+}
+.sidebarservices
+{
+  flex-direction:column;
+}
+.usercomments
+{
+  flex-direction:column;
+}
+.sidebarservices div
+{
+  margin: 5%;
+}
+button
+{
+  display: block;
+  margin: 10px;
+  padding: 7px;
+}
+input
+{
+  margin: 3px;
+  height: 35px;
+  width: 70%;
+  border-radius: 5px;
+}
+.comment
+{
+  margin-left: 5%;
+}
+.commentimg
+{
+  margin-top: 30px;
+  border-radius:15px;
+  width:5%;
+  height: 5%;
+  display: inline-block;
+}
+.username
+{
+  font-size: 14px;
+}
+.exit
+{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  color: red;
+  background-color: burlywood;
+  cursor: pointer;
+}
+.exit:hover
+{
+  background-color: red;
+  color: white;
+}
+.header
+{
+  display: grid;
+  width: 100%;
+  grid-template-columns:150px 1fr;
+}
+.logo
+{
+    font-size:17px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    width: fit-content;
+    margin-left: -30%;
+}
+
+.navbar a
+{
+  font-size: 14px;
+  margin-left:5%;
+  padding: 0;
+  width: fit-content;
+}
+
+
+
+footer
+{
+  text-align: center;
+  font-size: 16px;
+}
+
+  
+}
+
+
