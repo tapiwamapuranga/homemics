@@ -187,3 +187,93 @@ p1:hover {
     text-decoration: underline;
     text-decoration-thickness: 2px;
 }
+
+
+
+/*Media Querying for a small phone*/
+@media screen and (max-width:400px) 
+{
+
+h1
+{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom:5px ;
+}
+.all-services
+{
+    flex-direction: column;
+    align-items:start;
+    justify-content:center;
+}
+.electrical-services div
+{
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+.electrical-services h3{
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom:10px ;
+}
+.bs
+{
+    border-style: none;
+    font-weight:bolder;
+    font-size: 20px;
+    padding: 4px;
+    margin: 7px;
+}
+
+.services-logo
+{
+    cursor: pointer;
+}
+.electrical,
+.plumbing
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.eheading,
+.pheading
+{
+    font-size: 24px;
+    padding-bottom: 10px;
+    line-height:normal;
+}
+.eimg,
+.pimg
+{
+    width:80%;
+    height:90%;
+    margin-left:15%;
+}
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin:0px;
+}
+.productimg {
+    width: 80%;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+p1 {
+    margin-left: 10px;
+}
+
+.shophead
+{
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+    
+}

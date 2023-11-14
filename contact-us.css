@@ -31,3 +31,13 @@ h3
   opacity:0.8;
   border-color: rgb(72, 245, 72);
 }
+@media screen and (max-width:400px) 
+{
+  h1  
+  {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+}
